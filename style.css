@@ -108,4 +108,52 @@ header {
 
 #enterKey {
 	grid-column: 1 / 4;
+	border: 1px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 25px;
+    padding: 10px 10px;
+    width: auto;
+    text-align: center;
+    color: black;
+	
+}
+
+#enterKey:hover {
+
+	box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+}
+#enterKey:active {
+
+	box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+	-webkit-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+	-moz-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+}
+
+#deleteKey {
+	
+	border: 1px solid black;
+    border-radius: 5px;
+    margin: 2px;
+    font-size: 25px;
+    padding: 10px 10px;
+    width: auto;
+    text-align: center;
+    color: black;
+	
+}
+
+#deleteKey:hover {
+
+	box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+}
+#deleteKey:active {
+
+	box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+	-webkit-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+	-moz-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
 }
