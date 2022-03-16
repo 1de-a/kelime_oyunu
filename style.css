@@ -16,6 +16,13 @@ footer {
 	width: 100%;
 }
 
+#desc {
+
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
 header {
 	text-align: center;
 	font-size: 40px;
@@ -31,6 +38,7 @@ header {
 	width: 50%;
 	display: grid;
 	grid-template: 50px / auto auto auto auto auto;
+	gap: 2px;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
@@ -42,42 +50,31 @@ header {
 	
 	height: 50px;
 	width: 50px;
-	font-size: 30px;
+	background-color: white;
+	border: 1px solid black;
 	text-align: center;
-	border: 1px ridge black;
+	font-size: 40px;
+	text-transform: capitalize;
+	
 	
 }
 
-.box:hover {
-
-	box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
-	-webkit-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
-	-moz-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
-}
-
-.box:active {
-
-	box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
-	-webkit-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
-	-moz-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
-}
-
-#desc {
-
-	text-align: center;
-	margin-bottom: 50px;
-}
 
 
-.keys {
 
-    margin: auto;
+#keys {
+	margin: auto;
 	margin-top: 100px;
 	display: grid;
-	grid-template: 60px / auto auto auto auto auto auto auto auto auto auto auto;
+	grid-template-columns: auto auto auto auto auto auto auto auto auto auto auto;
 	justify-content: center;
 	align-items: center;
 	text-align: center;
+	width: 60%;
+    border-radius: 5px;
+    font-size: 25px;
+    padding: 10px 10px;
+    
 }
 
 
@@ -88,17 +85,27 @@ header {
     margin: 2px;
     font-size: 25px;
     padding: 10px 10px;
-    width: 30px;
+    width: auto;
     text-align: center;
     color: black;
+	
     
 
 }
 
+.key:hover {
 
-kbd {
+	box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+	-webkit-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75);
+}
+.key:active {
 
-display: block;
-font-size: 25px;
+	box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+	-webkit-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+	-moz-box-shadow: 5px 4px 9px 0px rgba(0,0,0,0.75) inset;
+}
 
+#enterKey {
+	grid-column: 1 / 4;
 }
