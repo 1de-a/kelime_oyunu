@@ -14,6 +14,16 @@ let deneme6;
 let soru = "";
 let soruArray;
 let deneme1array;
+let number = Math.floor(Math.random() * (kelimeHavuzu.length) )
+
+
+let liner;
+console.log(number);
+
+{soru = kelimeHavuzu[number]};
+
+
+console.log(soru);
 
 
 
@@ -28,9 +38,9 @@ for (let a = 1; a <31; a++) {
 
 
 if
- (document.getElementById(a).innerText === "" && checkChar<5)
+ (document.getElementById(a).innerText === "" && (checkChar<5&&checkLine==0||checkChar<10&&checkLine==1||checkChar<15&&checkLine==2||checkChar<20&&checkLine==3||checkChar<25&&checkLine==4||checkChar<30&&checkLine==5))
   
-  {document.getElementById(a).innerText = attribute;
+  {document.getElementById(a).innerHTML = attribute;
     
     checkChar = checkChar+1;
     console.log(checkChar);
@@ -57,15 +67,15 @@ for (var i = 0; i < elements.length ; i++) {
 function enter() {
 
 
-if (soru==="") {soru = kelimeHavuzu[Math.floor(Math.random() * (kelimeHavuzu.length+ 1) )]};
-
-
-console.log(soru);
+  
+  liner = checkChar - 4;
+  console.log(liner);
+  checkLine = checkLine + 1;
 
 
   if (checkChar%5==0) { 
-  
-    deneme1 = document.getElementById(1).innerHTML + document.getElementById(2).innerHTML + document.getElementById(3).innerHTML + document.getElementById(4).innerHTML + document.getElementById(5).innerHTML ;
+    
+    deneme1 = document.getElementById(checkChar-4).innerHTML + document.getElementById(checkChar-3).innerHTML + document.getElementById(checkChar-2).innerHTML + document.getElementById(checkChar-1).innerHTML + document.getElementById(checkChar).innerHTML ;
     console.log(deneme1)
   }
 
@@ -74,6 +84,18 @@ console.log(soruArray);
  deneme1array = deneme1.split("");
 console.log(deneme1array);
 
-for(i=0;i<5;i++) {if (soruArray[i]===deneme1array[i]){document.getElementById(i+1).style.backgroundColor="green"}}
+
+for(i=0;i<5;i++) {if (soruArray.includes(deneme1array[i])){document.getElementById(i+(checkChar-4)).style.backgroundColor="#EDED31";console.log(i)}
+
+
+else  (document.getElementById(i+(checkChar-4)).style.backgroundColor="#B5B1B2")
+
+}
+
+;
+
+
+
+for(i=0;i<5;i++) {if (soruArray[i]===deneme1array[i]){document.getElementById(i+(checkChar-4)).style.backgroundColor="#86CD2A"}}
 }
 
